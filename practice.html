@@ -33,7 +33,7 @@
     </header>
 
     <!-- Adding new practice items today and tomorrow-->
-    
+
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
@@ -99,6 +99,32 @@
 
 <!-- Add Any elements ABove here to try out-->
 
+    <!-- Button trigger modal-->
+<button type="button" class="btn btn-Dark text-light" data-toggle="modal" data-target="#modalCookie1">Cookies</button>
+
+<!--Modal: modalCookie-->
+<div class="modal fade top" id="modalCookie1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true" data-backdrop="true">
+  <div class="modal-dialog modal-frame modal-bottom modal-notify modal-info" role="document">
+    <!--Content-->
+    <div class="modal-content bg-dark text-light">
+      <!--Body-->
+      <div class="modal-body">
+        <div class="row d-flex justify-content-center align-items-center">
+
+          <p class="pt-3 pr-2">We use cookies to improve your website experience</p>
+
+          <a type="button" class="btn btn-dark text-light">Learn more <i class="fa fa-info fa-md" aria-hidden="true"></i></a>
+          <a type="button" class="btn btn-dark text-light waves-effect" data-dismiss="modal">Ok, thanks</a>
+        </div>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: modalCookie-->
+
+
     <footer class="site-footer">
         <div class="container">
             <div class='row'>
@@ -125,10 +151,17 @@
             </div>
         </div>
     </footer>
+    <script>
+        $(document).ready(function(){
+            $("modalCookie1").modal('show');
+        });
+    </script>
 <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
 </body>
 
 </html>
