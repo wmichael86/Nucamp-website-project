@@ -2,10 +2,9 @@
 
 $(function () {
 
-    // Attach Button click event listener 
+    // Adding a Button click event listener 
    $("#reserveButton").click(function(){
-
-        // show Modal
+        // showing Modal
         $("#reserveModal").modal("show");
    });
 });
@@ -15,10 +14,9 @@ $(function () {
 
 $(function () {
 
-    // Attach Button click event listener 
+    // Adding a Button click event listener 
    $("#loginButton").click(function(){
-
-        // show Modal
+        // showing Modal
         $("#loginModal").modal("show");
    });
 });
